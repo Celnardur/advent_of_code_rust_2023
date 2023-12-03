@@ -1,4 +1,5 @@
 mod day01;
+mod day02;
 // Add more modules as needed
 
 use std::env;
@@ -25,6 +26,7 @@ fn run_day(day: u32) {
 
     match day {
         1 => day01::run(),
+        2 => day02::run(),
         // Add more days as needed
         _ => eprintln!("Day {} not implemented", day),
     }
@@ -33,6 +35,7 @@ fn run_day(day: u32) {
 fn name_of_day(day: u32) -> &'static str {
     match day {
         1 => day01::name(),
+        2 => day02::name(),
         // Add more days as needed
         _ => "Unknown",
     }
